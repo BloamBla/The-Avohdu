@@ -8,7 +8,7 @@ html, body {
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
-    grid-template-areas:
+        grid-template-areas:
             "header header header"
             "left-menu content right-menu"
             "footer footer footer";
@@ -218,13 +218,20 @@ html, body {
 }
 
 .right-menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     margin-left: 8px;
 }
 
 .right-menu-item:first-child {
     width: 172px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;
     padding: 20px 23px;
@@ -277,26 +284,37 @@ html, body {
     -ms-grid-column: 2;
     grid-area: content;
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     padding-left: 35px;
     padding-right: 30px;
 }
 
 .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex: 0 0 100%;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     height: 245px;
     background: #bec3ca;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
 }
 
 .main-content h3 {
-    flex: 0 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     margin: 0;
     padding: 20px 20px 10px 20px;
     display: block;
@@ -347,13 +365,19 @@ html, body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: footer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 11px;
     font-family: Tahoma, serif;
 }
 
 .footer-item:first-child {
-    flex: 0 0 260px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 260px;
+            flex: 0 0 260px;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
     max-height: max-content;
     padding: 50px 0 0 35px;
     color: #7c8688;
