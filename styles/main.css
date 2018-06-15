@@ -8,7 +8,7 @@ html, body {
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
-        grid-template-areas:
+    grid-template-areas:
             "header header header"
             "left-menu content right-menu"
             "footer footer footer";
@@ -68,7 +68,7 @@ html, body {
     padding: 35px 65px 0 0;
 }
 
-.home-mail-wrap img {
+.home-mail-wrap a {
     margin-left: 5px;
 }
 
@@ -155,15 +155,15 @@ html, body {
 }
 
 .left-menu-item:nth-child(2) {
-    padding: 0 0 10px 0;
+    padding: 20px 0 10px 0;
 }
 
-.left-menu-item:nth-child(2) ul > h4{
+.left-menu-item:nth-child(2) > span{
     font-weight: bold;
     font-size: 14px;
     color: #b61c2a;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 60px;
 
 }
 
@@ -223,8 +223,8 @@ html, body {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     margin-left: 8px;
 }
 
@@ -254,6 +254,10 @@ html, body {
     padding-left: 6px;
     color: #b51d22;
     font-weight: bold;
+}
+
+.banner-wrap a:first-child:hover {
+    text-decoration: none;
 }
 
 .right-menu-item:last-child {
@@ -289,8 +293,8 @@ html, body {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     padding-left: 35px;
     padding-right: 30px;
 }
@@ -300,12 +304,12 @@ html, body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     height: 245px;
     background: #bec3ca;
     border-radius: 5px;
@@ -313,8 +317,8 @@ html, body {
 
 .main-content h3 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
     margin: 0;
     padding: 20px 20px 10px 20px;
     display: block;
@@ -355,6 +359,10 @@ html, body {
     color: #b61c2a;
 }
 
+.content-item a:hover {
+    text-decoration: none;
+}
+
 .content-item div:before {
     content: url("../images/full_story_arrow.png");
     padding-right: 10px;
@@ -374,8 +382,8 @@ html, body {
 
 .footer-item:first-child {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 260px;
-            flex: 0 0 260px;
+    -ms-flex: 0 0 260px;
+    flex: 0 0 260px;
     max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
