@@ -17,7 +17,7 @@ html, body {
     -ms-grid-rows: 155px 1fr 120px;
     grid-template-rows: 155px 1fr 120px;
     height: 1440px;
-    background: url("../images/Background.png");
+    background: url("../pics/Background.png");
 }
 
 .header {
@@ -32,7 +32,7 @@ html, body {
     -webkit-box-direction: normal;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
-    background: url("../images/Background_Head.png") no-repeat;
+    background: url("../pics/Background_Head.png") no-repeat;
 }
 
 .header-logo {
@@ -60,7 +60,7 @@ html, body {
 
 .header-pic {
     width: 620px;
-    background: url("../images/Pic.png") no-repeat;
+    background: url("../pics/Pic.png") no-repeat;
     text-align: right;
 }
 
@@ -117,12 +117,12 @@ html, body {
 
 .main-left-link-wrap:hover {
     padding-right: 30px;
-    background: url("../images/bg-li.png") -5.7px 1px;
+    background: url("../pics/bg-li.png") -5.7px 1px;
 }
 
 .main-left-link-wrap:active {
     padding-right: 30px;
-    background: url("../images/bg-li.png") -5.7px 1px;
+    background: url("../pics/bg-li.png") -5.7px 1px;
 }
 
 .main-left-link-wrap {
@@ -134,7 +134,7 @@ html, body {
 }
 
 .left-menu-ul-wrap{
-    background: url("../images/Menu_Red.png") no-repeat;
+    background: url("../pics/Menu_Red.png") no-repeat;
     border-radius: 3px;
 }
 
@@ -363,7 +363,7 @@ html, body {
 }
 
 .content-item-link-wrap:before {
-    content: url("../images/full_story_arrow.png");
+    content: url("../pics/full_story_arrow.png");
     padding-right: 10px;
 }
 
