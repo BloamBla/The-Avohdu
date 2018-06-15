@@ -14,8 +14,8 @@ html, body {
             "footer footer footer";
     -ms-grid-columns: 260px 1fr 270px;
     grid-template-columns: 260px 1fr 270px;
-    -ms-grid-rows: 155px 1fr 140px;
-    grid-template-rows: 155px 1fr 130px;
+    -ms-grid-rows: 155px 1fr 120px;
+    grid-template-rows: 155px 1fr 120px;
     height: 1440px;
     background: url("../images/Background.png");
 }
@@ -39,7 +39,7 @@ html, body {
     max-width: 400px;
 }
 
-.header-logo img {
+.logo-image {
     margin: 30px 0 0 20px;
 }
 
@@ -48,7 +48,7 @@ html, body {
     src: url("../fonts/Franklin Gothic Demi Cond/framd.ttf");
 }
 
-.header-logo p {
+.logo-text {
     font-family: "Franklin Gothic Demi Cond", sans-serif;
     font-weight: bold;
     font-size: 21px;
@@ -68,7 +68,7 @@ html, body {
     padding: 35px 65px 0 0;
 }
 
-.home-mail-wrap a {
+.link-margin {
     margin-left: 5px;
 }
 
@@ -111,21 +111,21 @@ html, body {
     border: 1px solid #bfc8cc;
 }
 
-.left-menu-item > ul > li > a:hover {
+.link-hover:hover {
     text-decoration: none;
 }
 
-.left-menu-item div ul > li:hover {
+.main-left-link-wrap:hover {
     padding-right: 30px;
-    background: url("../images/bg-li.png") -5.7px 0;
+    background: url("../images/bg-li.png") -5.7px 1px;
 }
 
-.left-menu-item div ul > li:active {
+.main-left-link-wrap:active {
     padding-right: 30px;
-    background: url("../images/bg-li.png") -5.7px 0;
+    background: url("../images/bg-li.png") -5.7px 1px;
 }
 
-.left-menu-item div ul > li {
+.main-left-link-wrap {
     padding-right: 30px;
 }
 
@@ -133,12 +133,12 @@ html, body {
     margin-bottom: 30px;
 }
 
-.left-menu-item:first-child div{
+.left-menu-ul-wrap{
     background: url("../images/Menu_Red.png") no-repeat;
     border-radius: 3px;
 }
 
-.left-menu-item:first-child ul {
+.left-menu-ul {
     margin: 0;
     padding: 30px 30px 50px 0;
     text-align: right;
@@ -149,7 +149,7 @@ html, body {
     font-size: 12px;
 }
 
-.left-menu-item:first-child a {
+.left-menu-link {
     text-decoration: none;
     color: white;
 }
@@ -158,21 +158,20 @@ html, body {
     padding: 20px 0 10px 0;
 }
 
-.left-menu-item:nth-child(2) > span{
+.useful-span-wrap {
     font-weight: bold;
     font-size: 14px;
     color: #b61c2a;
     margin: 0;
     padding: 0 0 0 60px;
-
 }
 
-.left-menu-item:nth-child(2) ul {
+.useful-ul-wrap {
     line-height: 30px;
     list-style: none;
 }
 
-.left-menu-item:nth-child(2) a {
+.useful-a-wrap {
     color: #495e78
 }
 
@@ -183,8 +182,8 @@ html, body {
     line-height: 18px;
 }
 
-.left-menu-item:last-child span{
-    margin-right: 40px;
+.contact-span-wrap {
+    margin-right: 30px;
 }
 
 .phone-mail {
@@ -237,11 +236,11 @@ html, body {
     padding: 20px 23px;
 }
 
-.right-menu-item a {
+.right-menu-links {
     float: top;
 }
 
-.right-menu-item img {
+.right-menu-pic {
     float: bottom;
 }
 
@@ -250,13 +249,13 @@ html, body {
     margin: 8px 0;
 }
 
-.banner-wrap a:first-child {
+.flights-wrap, .insurance-wrap {
     padding-left: 6px;
     color: #b51d22;
     font-weight: bold;
 }
 
-.banner-wrap a:first-child:hover {
+.flights-wrap:hover, .insurance-wrap:hover {
     text-decoration: none;
 }
 
@@ -315,7 +314,7 @@ html, body {
     border-radius: 5px;
 }
 
-.main-content h3 {
+.content-h3-wrap {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
@@ -328,7 +327,7 @@ html, body {
     font-family: Tahoma, serif;
 }
 
-.main-content p {
+.main-content-p {
     font-family: Tahoma, serif;
     font-size: 11px;
     max-width: 185px;
@@ -350,20 +349,20 @@ html, body {
     font-size: 11px;
 }
 
-.content-item span{
+.content-item-span {
     font-weight: bold;
     color: #b61c2a;
 }
 
-.content-item a {
+.content-item-a {
     color: #b61c2a;
 }
 
-.content-item a:hover {
+.content-item-a:hover {
     text-decoration: none;
 }
 
-.content-item div:before {
+.content-item-link-wrap:before {
     content: url("../images/full_story_arrow.png");
     padding-right: 10px;
 }
@@ -378,37 +377,40 @@ html, body {
     display: flex;
     font-size: 11px;
     font-family: Tahoma, serif;
+    max-height: max-content;
 }
 
 .footer-item:first-child {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 260px;
     flex: 0 0 260px;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
     max-height: max-content;
     padding: 50px 0 0 35px;
     color: #7c8688;
 }
 
-.footer nav {
+.footer-item:last-child {
+    max-height: max-content;
+}
+
+.footer-nav-wrap {
     padding: 60px 0 0 0;
 }
 
-.footer nav > div {
+.footer-nav-item {
     display: inline-block;
 }
 
-.footer-item nav a {
+.footer-link {
     color: #7c8688;
     text-decoration: none;
 }
 
-.footer-item nav > div:after {
+.footer-nav-item:after {
     content: "|";
     margin: 0 5px;
 }
 
-.footer-item  nav > div:last-child:after {
+.footer-nav-item:last-child:after {
     content: '';
 }
